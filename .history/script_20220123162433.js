@@ -1,0 +1,4 @@
+$(function () {
+  $('.eyecacth_wrapper')
+})
+

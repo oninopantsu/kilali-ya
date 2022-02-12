@@ -1,0 +1,1 @@
+$("セレクタ").animate({ marginLeft: "100%"});

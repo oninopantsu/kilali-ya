@@ -1,0 +1,1 @@
+$("eyecacth_wrapper--ttl").animate({ marginLeft: "100%"});

@@ -1,0 +1,296 @@
+$main-color: #eb1515;
+$main-font: Serif Caption;
+$title-color: #4a1717;
+$title-circle: #f70d0d;
+$bg-circle: #eb1515;
+$pc: 481px;
+$mb: 480x;
+$main-font: "PT Serif Caption", serif;
+@mixin ttl {
+  width: 90%;
+  font-size: 3rem;
+  font-family: $main-font;
+  position: absolute;
+  z-index: 20;
+  vertical-align: middle;
+  text-align: center;
+}
+@mixin dot {
+  background: $title-circle;
+  border-radius: 50%;
+  border: 1rem solid $title-circle;
+  width: 1%;
+  margin: 4rem 1rem;
+  opacity: 0.7;
+  color: #f96263;
+}
+@mixin dotline {
+  display: flex;
+  justify-content: center;
+  margin: 60px 0;
+}
+@mixin ttlbg {
+  font-weight: bold;
+  color: #707070;
+  opacity: 5%;
+  font-size: 8rem;
+  position: absolute;
+  z-index: 10;
+  left: 25rem;
+  top:-5rem;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif+Caption&display=swap");
+
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN";
+  h2 {
+    @include ttl;
+  }
+  .dot_line {
+    @include dotline;
+  }
+  .dot {
+    @include dot;
+  }
+  .ttl_bg {
+    @include ttlbg;
+  }
+
+  // header start
+  header {
+    background-color: $main-color;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    position: relative;
+    z-index: 0;
+    margin: 0;
+
+    .header_title {
+      font-family: "PT Serif Caption", serif;
+      font-size: 1.6rem;
+      color: #fff;
+      line-height: 2rem;
+      padding: 0.5rem 2rem;
+      z-index: 20;
+    }
+    .header_title--logo {
+      z-index: 10;
+      margin-left: -65rem;
+    }
+    img {
+      width: 7%;
+      height: auto;
+      transform: rotate(-3deg);
+    }
+    .header_menu--list li {
+      list-style: none;
+      color: #fff;
+      display: inline-block;
+      margin-left: 1rem;
+      vertical-align: middle;
+      font-size: 1.2rem;
+      &:last-child {
+        margin-right: 20px;
+      }
+    }
+    .header_menu--listmb {
+      display: none;
+    }
+  }
+  // end
+
+  // eyecacth start
+  .eyecacth_wrapper {
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+    z-index: 0;
+    .eye_img {
+      width: 100%;
+      z-index: 20;
+      position: relative;
+    }
+    .eyecacth_wrapper--ttl {
+      writing-mode: vertical-rl;
+      color: #f6f4f4;
+      font-size: 2rem;
+      font-family: "PT Serif Caption", serif;
+      font-weight: normal;
+      letter-spacing: 0.6rem;
+      z-index: 50;
+      position: absolute;
+      top: 3.6rem;
+      left: 16rem;
+      // 縦書き
+    }
+    .eyecacth_ttl--bg {
+      width: 30rem;
+      height: 30rem;
+      background: #eb1515;
+      border-radius: 50%;
+      filter: blur(20px);
+      z-index: 30;
+      top: 3rem;
+      left: 5rem;
+      position: absolute;
+    }
+  }
+  // eyecacth end
+
+  // about start
+  .about_wrapper {
+    background-color: #fedede;
+    padding: 4rem 0;
+    position: relative;
+    width: 100%;
+  }
+  .about_wrapper--contents {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    font-family: "Hiragino Kaku Gothic ProN" sans-serif;
+  }
+
+  .about-img {
+    width: 15%;
+    height: auto;
+  }
+  .about_contents--txt {
+    width: 75%;
+    padding-left: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    font-size: 24px;
+  }
+  h3 {
+    font-weight: bold;
+    line-height: 2.3rem;
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 30px;
+  }
+  .about_wrapper--section {
+    line-height: 2.2rem;
+  }
+  p .fontcolor {
+    color: red;
+    font-weight: bold;
+  }
+  .fontweight {
+    font-weight: bold;
+  }
+  .about_wrapper--section2 {
+    line-height: 2.7rem;
+  }
+  .about_wrapper--btn {
+    width: 40%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    button {
+      display: inline-block;
+      background-color: #f96263;
+      border: none;
+      padding: 1rem;
+      border-radius: 4rem;
+    }
+  }
+  // about end
+
+  // explanation start
+  .explanation_wrapper {
+    width: 100%;
+    position: relative;
+    .explanation_wrapper--ttl {
+      .ttl_bg {
+        top: 40rem;
+      }
+    }
+    h2 {
+      @include ttl;
+    }
+    .dot_line {
+      @include dotline;
+    }
+    .dot {
+      @include dot;
+    }
+    
+  }
+  .explanation_wrapper--block {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 20px;
+    .explanation_wrapper--contents {
+      width: 90%;
+      border: 1px solid #707070;
+    }
+    .ttl_set {
+      width: 90%;
+      margin: 3rem auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    h3 {
+      font-size: 3rem;
+      color: #000000;
+      opacity: 0.5;
+      position: relative;
+    }
+    .ttl_number {
+      font-size: 7rem;
+      color: #fff;
+      opacity: 0.2;
+      font-weight: bold;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #F4A3A3;
+      position: absolute;
+      margin: -0.5rem 3rem;
+      
+    }
+    img {
+      width: 40%;
+    }
+    .contents_ttl {
+      text-align: center;
+      font-size: 2.6rem;
+    }
+    .contents_ttl--list {
+      color: #EA70A8;
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.4rem;
+      line-height: 0.8;
+    }
+    .contents_txt {
+      width: 95%;
+      margin: 0 auto;
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.5rem;
+      color: #726E6E;
+      padding: 3rem;
+
+    }
+    span {
+    color: red;
+    font-weight: bold;
+    font-size: 1.5rem;
+    }
+    .contents_txt--list  li{
+      color: red;
+      line-height: 1.5;
+      padding: 1.5rem;
+    }
+    .contents_ttl--list {
+      di
+    }
+  }
+}

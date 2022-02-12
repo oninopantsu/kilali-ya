@@ -1,0 +1,3 @@
+$('.eyecacth').animate({
+  slide
+})
