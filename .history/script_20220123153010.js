@@ -1,1 +1,0 @@
-$("").animate({ marginLeft: "100%"});

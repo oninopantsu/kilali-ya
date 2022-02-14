@@ -1,3 +1,0 @@
-$('.eyecacth').animate({
-  s
-})
